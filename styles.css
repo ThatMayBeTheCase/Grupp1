@@ -196,6 +196,7 @@ h3 {
 }
 .article .plant {
     position: absolute;
+    /* position: relative; */
     right: 62%;
     top: 135%;
     width: 150px;
