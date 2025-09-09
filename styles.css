@@ -445,7 +445,7 @@ h3 {
     gap: 12rem;
 }
 .footer-left a {
-   margin-bottom: 50px;
+   /* margin-bottom: 50px; */
 }
 
 .till-topp {
@@ -469,7 +469,7 @@ h3 {
     transition: all 0.2s ease-in-out;
 }
 .icon {
-   
+  
 }
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
