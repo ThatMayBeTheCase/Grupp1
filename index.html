@@ -6,9 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap" rel="stylesheet">
-
-
-
     <link rel="stylesheet" href="styles.css">
     <title>Planned Planthood</title>
 </head>
@@ -45,16 +42,18 @@
             </div>
             <div class="text">
                 <h2>Säsong att så</h2>
-                <p>Våren är äntligen här i kollektivet!  Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nemo voluptatum neque, iste atque quod officia?</p>
+                <p>Våren är äntligen här i kollektivet! <br>  Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nemo voluptatum neque, iste atque quod officia?</p>
                 <button class="green-button">SÅ-TIPS</button>
             </div>
         </section>
             
+        <!-- VÅRA PLANERADE PLANTERINGAR -->
         <h3>Våra planerade planteringar:</h3>
         <section class="content2">
             <article class="article">
-                <img src="./assets/images/gurka.avif" alt="gurka">
-                <img class="plant" src="./assets/icons/plant.svg" alt="plant">
+                <div class="plant">
+                    <img src="./assets/images/gurka.avif" alt="gurka">
+                </div>
                 <section class="info">
                     <p class="vegetable">Gurka</p> 
                     <p class="date">15  april 2024</p>
@@ -63,7 +62,9 @@
                 </section>
             </article>
             <article class="article">
-                <img src="./assets/images/tomater.avif" alt="tomater">
+                <div class="plant">
+                    <img src="./assets/images/tomater.avif" alt="tomater">
+                </div>
                 <section class="info">
                     <p class="vegetable">Tomat</p> 
                     <p class="date">1  april 2024</p>
@@ -72,7 +73,9 @@
                 </section>
             </article>
             <article class="article">
-                <img src="./assets/images/tomat.avif" alt="tomat">
+                <div class="plant">
+                    <img src="./assets/images/tomat.avif" alt="tomat">
+                </div>
                 <section class="info">
                     <p class="vegetable">Tomat</p> 
                     <p class="date">1  april 2024</p>
@@ -81,7 +84,9 @@
                 </section>
             </article>
             <article class="article">
-                <img src="./assets/images/ärta.avif" alt="ärta">
+                <div class="plant">
+                    <img src="./assets/images/ärta.avif" alt="ärta">
+                </div>
                 <section class="info">
                     <p class="vegetable">Sockerärtor</p> 
                     <p class="date">15  april 2024</p>
@@ -90,7 +95,9 @@
                 </section>
             </article>
             <article class="article">
-                <img src="./assets/images/lilagrönsak.avif" alt="majrova">
+                <div class="plant">
+                    <img src="./assets/images/lilagrönsak.avif" alt="majrova">
+                </div>
                 <section class="info">
                     <p class="vegetable">Majrova</p>
                     <p class="date">1  april 2024</p>
@@ -99,7 +106,9 @@
                 </section>
             </article>
             <article class="article">
-                <img src="./assets/images/cloesupväxt.avif" alt="squash">
+                <div class="plant">
+                    <img src="./assets/images/cloesupväxt.avif" alt="squash">
+                </div>
                 <section class="info">
                     <p class="vegetable">Squash</p>
                     <p class="date">15  april 2024</p>
@@ -108,14 +117,39 @@
                 </section>
             </article>
         </section>
+        <button id="show-more-button">Visa fler</button>
         
+        <!-- VÅRA TIDIGARE ODLINGAR -->
+        <section class="content3">
+            <div class="text3">
+                <h2>Våra tidigare odlingar</h2>
+                <p>Våren är äntligen här i kollektivet! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.  Nemo voluptatum neque, iste atque quod officia?</p>
+                <button class="green-button">Planterade plantor</button>
+            </div>
+            <div id="green-plant">
+                <img src="./assets/icons/plant.svg" alt="Seed-package">
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
         <footer class="footer">
-            <p>© 2025 Planned Planthood</p>
-            <address class= "kontakt-bar">
-                
-             <a href="tel:+46700000000"><img src="./assets/icons/telephone.svg" alt ="Telefon" class="icon"> +46 70 000 00 00</a>
-             <a href="mailto:info@gmail.com"><img src="./assets/icons/envelope.svg" alt="email" class="icon">info@gmail.com</a>
-            </address>
+            <section class="footer-hero">
+                <address class= "kontakt-bar">
+                    <div class="footer-left">
+                        <p class="footer-title">Vi hörs!</p>
+                        <a href="tel:+46700000000"><img src="./assets/icons/telephone.svg" alt ="Telefon" class="icon"> +46 70 000 00 00</a>
+                        <a href="mailto:info@gmail.com"><img src="./assets/icons/envelope.svg" alt="email" class="icon">info@gmail.com</a>
+                    </div>
+                </address>
+
+                <img class="footer-logo" src="./assets/icons/Logo.svg" alt="heart">
+                <picture class="footer-image">
+                    <img src="./assets/images/handsidan.avif" alt="handsidan">
+                </picture>
+            </section>
+            <nav class="till-topp">
+                <a href="#topp">Till toppen av sidan</a>
+            </nav>
         </footer>
     </section>
 </body>
