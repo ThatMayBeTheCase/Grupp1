@@ -404,58 +404,67 @@ h3 {
     background-color: rgba(0, 0, 0, 0.79);
     z-index: 1;
 }
-.kontakt-bar {
-    color: #fff;
+.footer-title {
     position: absolute;
-    /* left: clamp(16px, 6vw, 30px);
-    top: clamp(20px, 8vw, 100px); */
-    /* display: flex; */
-    z-index: 2;
-}
-.kontakt-bar a {
+    z-index:2; text-align:center;
+    left: 0;
+    top: 40%;
+    width: 50%;
+    height: 100%;
+    margin: 0;
     color: #fff;
-    text-decoration: none;
+    font-family: var(--maven);
+    font-size: clamp(28px, 6vw, 56px);
+    font-style: normal;
+    font-weight: 700;
 }
 .footer-logo {
   position: absolute;
-  right: clamp(70px, 9vw, 160px);
+  left: 75%;
   top: 50%;
-  transform: translateY(-50%);
-  width: clamp(72px, 18vw, 180px);
+  transform: translate(-50%, -50%);
+  width: clamp(72px, 50vw, 180px);
   height: auto;
   z-index: 2;
 }
-.footer-title {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
+.footer-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    font-family: var(--maven);
-    font-style: normal;
-    font-weight: 700;
-    margin-top: 200px;
+    z-index: 2;
+    position: absolute;
+    left: 12px;
+    right: 50%;
+    bottom: 10px;
 }
-.footer-left {
-    display: flex;
+.contact {
+    display: inline-flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 200px;
-    margin-left: 10px;
-    gap: 12rem;
+    gap: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--open);
 }
-/* .footer-left a {
-   margin-bottom: 50px;
+.contact--phone {
+    justify-self: start;
+    padding: 10px;
 }
- */
-.till-topp {
+.contact--email {
+    justify-self: end;
+    padding: 10px;
+}
+.contact--envelope {
+    justify-self: end;
+    margin-right: 20px;
+}
+.return {
     text-align: center;
     text-decoration: none;
     padding: 1px 0;
     padding: 20px;
     box-shadow: 0px 4px 4px rgba(56, 55, 55, 0.25);
 }
-.till-topp a {
+.return a {
     text-decoration: none;
     color: black;
     font-family: var(--open);
@@ -463,9 +472,8 @@ h3 {
     color: black;
     font-size: 1.5rem;
 }
-.till-topp a:hover {
+.return a:hover {
     color: var(--grön);
-    transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
 /* .icon {
