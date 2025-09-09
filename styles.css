@@ -80,7 +80,7 @@ body {
     position: absolute;
     top:50%; left:50%;
     transform: translate(-50%, -50%);
-    width: clamp(48px, 28%, 120px);
+    width: clamp(48px, 35%, 200px);
     height: auto;
 }
 
@@ -166,13 +166,17 @@ h1 {
     align-items: center
 }
 #Seed-package img {
-    width: 200px;
-    height: 200px;
+    width: clamp(100px, 35vw, 175px);
+    height: clamp(100px, 35vw, 175px);
 }
 #Seed-package {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
     background-color: #0a846e;
-    width: 300px;
-    height: 300px;
+    width: clamp(180px, 35vw, 300px);
+    height: clamp(180px, 35vw, 300px);
     border-radius: 50%;
 }
 /* VÅRA PLANERADE PLANTERINGAR: */
@@ -361,13 +365,13 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: #0a846e;
-    width: 300px;
-    height: 300px;
+    width: clamp(180px, 35vw, 300px);
+    height: clamp(180px, 35vw, 300px);
     border-radius: 50%;
 }
 #green-plant img {
-    width: 200px;
-    height: 200px;
+    width: clamp(100px, 35vw, 175px);
+    height: clamp(100px, 35vw, 175px);
 }
 
 
@@ -377,7 +381,7 @@ h3 {
 }
 .footer-hero {
     position: relative;
-    height: clamp(500px, 45vh, 590px);
+    height: clamp(240px, 45vh, 590px);
     overflow: hidden;
 }
 .footer-image {
@@ -475,6 +479,13 @@ h3 {
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
 @media (max-width: 768px) {
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
     .content {
         display: flex;
         flex-direction: column;
