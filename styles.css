@@ -23,6 +23,7 @@ html { scroll-behavior: smooth; }
 /* BAKGRUND */
 body {
     background-color: var(--rosa);
+    margin: 0;
 }
 
 /* HELA CONTENT SIDAN */
@@ -293,6 +294,7 @@ h3 {
 #show-more-button {
     display: inline-flex;
     justify-content: center;
+    justify-self: center;
     align-self: center;
     background-color: var(--grön);
     color: white;
@@ -431,7 +433,7 @@ h3 {
     font-family: var(--maven);
     font-style: normal;
     font-weight: 700;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .footer-left {
     display: flex;
@@ -442,6 +444,10 @@ h3 {
     margin-left: 10px;
     gap: 12rem;
 }
+.footer-left a {
+   margin-bottom: 50px;
+}
+
 .till-topp {
     text-align: center;
     text-decoration: none;
@@ -461,6 +467,9 @@ h3 {
     color: var(--grön);
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
+}
+.icon {
+   
 }
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
