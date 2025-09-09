@@ -480,25 +480,37 @@ h3 {
 /* OPTIMIZATION FOR SMALLER DEVICES */
 @media (max-width: 768px) {
 
-    .images {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
+    /* HEADER IMAGES */
+    .images{
+    grid-template-columns: 1fr;
+    row-gap: 0;
     }
+    .boxes{
+        grid-template-rows: none;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    #brown-box, #green-box{ aspect-ratio: 1 / 1; }
+
+    /* CONTENT 1 */
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    /* CONTENT 2 */
     .content2 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    /* CONTENT 3 */
     .content3 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    /* FOOTER */
 }
