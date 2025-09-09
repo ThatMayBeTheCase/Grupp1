@@ -444,10 +444,10 @@ h3 {
     margin-left: 10px;
     gap: 12rem;
 }
-.footer-left a {
-   /* margin-bottom: 50px; */
+/* .footer-left a {
+   margin-bottom: 50px;
 }
-
+ */
 .till-topp {
     text-align: center;
     text-decoration: none;
@@ -468,9 +468,9 @@ h3 {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
-.icon {
+/* .icon {
   
-}
+} */
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
 @media (max-width: 768px) {
