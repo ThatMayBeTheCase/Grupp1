@@ -3,30 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Sidor Planteringar</title>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="layout.css">
-    <title>Mina Sidor Planteringar</title>
 </head>
 <body>
     <section class="container">
-   
+
         <header class="header">
             <nav class="navbar">
-                <a href="./index.html">hem</a>    
-                <a href="#">planer</a>    
-                <a href="#">historik</a>
-                <a href="#">tips</a>
-                <a href="#">logga in</a>
+                <a href="./index.html">hem</a>
+                <a href="#">PLANER</a>
+                <a href="#">HISTORIK</a>
+                <a href="#">TIPS</a>
+                <a href="#">MINA SIDOR</a>
+                <a href="#">LOGGA UT</a>
             </nav>
+  
             <div class="handbild">
                 <img src="./assets/images/handsidan.avif" alt="handbild" class="hand">
                 <img src="./assets/icons/Logo.svg" alt="heart" class="heart">
-                <h1>Mina Sidor</h1>
+                <h1>Mina sidor</h1>
             </div>
         </header>
+
+        <section class="form-section">
+  <h2>Lägg till ny plantering:</h2>
+  <form>
+   
+    <div class="form-group">
+      <label for="planta1">Planta:</label>
+      <input type="text" id="planta1" name="planta1">
+    </div>
+    <div class="form-group">
+      <label for="datum1">Datum:</label>
+      <input type="date" id="datum1" name="datum1">
+    </div>
+
+
+    <div class="form-group">
+      <label for="planta2">Planta:</label>
+      <input type="text" id="planta2" name="planta2">
+    </div>
+    <div class="form-group">
+      <label for="datum2">Datum:</label>
+      <input type="date" id="datum2" name="datum2">
+    </div>
+
+    <button type="submit" class="btn">Lägg till</button>
+  </form>
+</section>
+
+
         
+
+        <!-- PLANT LIST -->
+        <section class="plant-list">
+            <h2>Dina planerade planteringar:</h2>
+            <div class="plant-card">
+                <img src="./assets/images/gurka.avif" alt="Gurka" class="plant-img">
+                <div class="plant-info">
+                    <p class="vegetable">Gurka</p> 
+                    <p class="date">15  april 2024</p>
+                    <p class="farmer">Rico Coolio</p>
+                    <div class="plant-actions">
+                        <button class="ändra-btn">ÄNDRA</button>
+                        <button class="tabort-btn">TA BORT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </section>
 </body>
 </html>
