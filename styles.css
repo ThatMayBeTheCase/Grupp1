@@ -125,9 +125,10 @@ h1 {
 }
 .content h2 {
     font-family: var(--open);
-    font-weight: 600;
+    font-weight: 550;
     color: black;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 .content p {
     font-family: var(--open);
@@ -137,14 +138,9 @@ h1 {
     display: flex; 
     flex-direction: column; 
 }
-.text h2 {
-    margin-bottom: 1rem;
-}
-
 .text p {
     margin-top: 0;
 }
-
 .green-button {
     align-self: flex-end;
     background-color: var(--grön);
@@ -324,27 +320,21 @@ h3 {
     padding: 5rem;
     
 }
-.content3 h2 {
+.content3 h4 {
     font-family: var(--open);
     font-weight: 600;
     color: black;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 .content3 p {
     font-family: var(--open);
     font-size: 1rem;
+    margin-top: 0;
 }
 .text3 { display: flex; 
     flex-direction: column; 
 }
-.text3 h2 {
-    margin-bottom: 1rem;
-}
-
-.text3 p {
-    margin-top: 0;
-}
-
 .green-button2 {
     align-self: flex-start;
     background-color: var(--grön);
@@ -537,7 +527,7 @@ h3 {
     }
 
     .text h2 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 550;
     }
 
@@ -560,6 +550,9 @@ h3 {
         display: grid;
         grid-template-columns:repeat(2, minmax(0,1fr));
         padding: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
     }
     .info {
         grid-template-rows: none;
@@ -591,11 +584,68 @@ h3 {
     }
 
     /* CONTENT 3 */
+   .content3 h4 {
+        font-size: 2rem;
+    }
     .content3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem;
+    row-gap: 2rem;
+    }
+
+    .text3 {
+    align-items: center;
+    font-size: 0,5rem;
+    }
+    .text3 h4 {
+    font-size: 1.3rem;
+    font-weight: 550;
+    }
+
+    .text3 p {
+    font-size: 0.95rem;
+    }
+    .green-button2 {
+        font-size: 1rem;
+    align-self: center;
+    margin-right: 0;
+    padding: 0.7rem 1.3rem;
+    margin-bottom: 30px;
+    }
+
+    #green-plant {
+    order: -1;    
+    margin: 0 auto;
+    }
+    #green-plant img {
+    width: clamp(50px, 35vw, 100px);
+    height: clamp(50px, 35vw, 100px);
     }
 
     /* FOOTER */
+    .footer-hero {
+        height: clamp(320px, 60vh, 520px);
+    }
+    .footer-hero::before {
+        inset: 50% 0 0 0;
+        width: auto;
+    }
+    .footer-logo {
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+    .footer-title {
+      left: 0;
+      top: 66%;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .footer-bottom {
+        left: 12px;
+        right: 12px;
+        grid-template-columns: auto 1fr auto;
+    }
 }
