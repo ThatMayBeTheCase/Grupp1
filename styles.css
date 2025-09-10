@@ -463,7 +463,6 @@ h3 {
     color: black;
     font-family: var(--open);
     font-weight: 400;
-    color: black;
     font-size: 1.5rem;
 }
 .return a:hover {
@@ -647,5 +646,8 @@ h3 {
         left: 12px;
         right: 12px;
         grid-template-columns: auto 1fr auto;
+    }
+    .return a {
+    font-size: 1rem;
     }
 }
