@@ -110,6 +110,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: var(--maven);
     color: var(--grön);
     text-transform: uppercase;
@@ -195,7 +196,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     max-width: 1000px;
     padding: 2rem;
     margin: 0 auto;
@@ -217,7 +218,7 @@ h3 {
 }
 .article .plant {
     position: relative;
-    height: clamp(140px, 22vw, 240px);
+    height: clamp(140px, 25vw, 240px);
     overflow: hidden;
 }
 .article .plant img {
@@ -504,28 +505,89 @@ h3 {
 
     /* PLANNED PLANTHOOD */
     /* CONTENT */
-    .content {}
+    h1 {
+        font-size: 2rem;
+    }
+    .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem;
+    row-gap: 2rem;
+    }
+
+    .text {
+    align-items: center;
+    font-size: 0,5rem;
+    }
+
+    .green-button {
+        font-size: 1rem;
+    align-self: center;
+    margin-right: 0;
+    padding: 0.7rem 1.3rem;
+    }
+
+    #Seed-package {
+    order: 2;
+    margin: 0 auto;
+    }
+    #Seed-package img {
+    width: clamp(50px, 35vw, 100px);
+    height: clamp(50px, 35vw, 100px);
+    }
+
+    .text h2 {
+    font-size: 1.1rem;
+    font-weight: 550;
+    }
+
+    .text p {
+    font-size: 0.95rem;
+    }
+    .line {
+        display: block;
+        width: 100%;
+        max-width: 202px;
+        height: 3px;
+        background: var(--grön);
+        margin: 1rem auto; 
+        order: 3;
+    }
 
     /* CONTENT 2 */
     /* VÅRA PLANERADE PLANTERINGAR: */
     .content2 {
-        .red-button {
-            display: inline-grid;
-            color: transparent;
-            background-color: transparent;
-            position: relative;
-            /* place-items: center; */
-            padding: 0;
+        display: grid;
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        padding: 1rem;
+    }
+    .info {
+        grid-template-rows: none;
+    }
+    .date {
+        /* margin-bottom: 0.1rem; */
+    }
+    .farmer {
+        margin: 0;
+    }
+    .content2 .red-button {
+        display: inline-grid;
+        color: transparent;
+        background-color: transparent;
+        position: relative;
+        border-radius: 50%;
+        place-items: center;
+        margin: 0;
+        padding: 0;
 
-        }
-        .red-button::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            background-color: var(--röd);
-            -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
-            mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
-        }
+    }
+    .content2 .red-button::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: var(--röd);
+        -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+        mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
     }
 
     /* CONTENT 3 */

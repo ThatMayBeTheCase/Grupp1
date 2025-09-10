@@ -1,0 +1,80 @@
+html { scroll-behavior: smooth; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    /* FÄRGER */
+    --brun: #9e6d52;
+    --grön: #0a846e;
+    --rosa: #FCF6FC;
+    --röd: #B93857;
+    --knappröd: #81253b;
+    --knappgrön: #055647;
+
+    /* TYPSNITTER */
+    --maven: 'Maven Pro', sans-serif;
+    --open: 'open-sans', sans-serif;
+    --lato: 'Lato', sans-serif;
+}
+
+/* BAKGRUND */
+body {
+    background-color: var(--rosa);
+    margin: 0;
+}
+/* HELA CONTENT SIDAN */
+.container {
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px rgba(114, 114, 114, 0.25);
+}
+.navbar a {
+    font-family: var(--maven);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--knappgrön);
+    padding: 10px;
+}
+.navbar a:hover {
+    color: var(--grön);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.header img {
+    display: block;
+    width: 52.15%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.handbild h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
+    font-family: var(--maven);
+    font-size: 3rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+}
