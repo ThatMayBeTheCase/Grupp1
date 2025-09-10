@@ -31,7 +31,9 @@ body {
     background-color: white;
     display: grid;
     margin: 0 auto;
+    margin-bottom: 50px;
     max-width: 1000px;
+    box-shadow: 4px 4px 4px rgba(114, 114, 114, 0.25);
 }
 
 /* BILDER TOPPEN */
@@ -150,6 +152,7 @@ h1 {
     border: none;
     border-radius: 10px;
     padding: 13px 30px;
+    margin-right: 30px;
     font-size: 20px;
     cursor: pointer;
     font-family: var(--open);
@@ -412,7 +415,6 @@ h3 {
     color: #fff;
     font-family: var(--maven);
     font-size: clamp(28px, 6vw, 56px);
-    font-style: normal;
     font-weight: 700;
 }
 .footer-logo {
@@ -442,6 +444,10 @@ h3 {
     text-decoration: none;
     font-family: var(--open);
 }
+.contact :hover {
+    color: var(--grön);
+    transition: all 0.2s ease-in-out;
+}
 .contact--phone {
     justify-self: start;
     padding: 10px;
@@ -459,7 +465,7 @@ h3 {
     text-decoration: none;
     padding: 1px 0;
     padding: 20px;
-    box-shadow: 0px 4px 4px rgba(56, 55, 55, 0.25);
+    box-shadow: 0px 4px 4px rgba(31, 29, 29, 0.25);
 }
 .return a {
     text-decoration: none;
@@ -473,9 +479,6 @@ h3 {
     color: var(--grön);
     transition: all 0.2s ease-in-out;
 }
-/* .icon {
-  
-} */
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
 @media (max-width: 768px) {
@@ -484,25 +487,45 @@ h3 {
     .images{
     grid-template-columns: 1fr;
     row-gap: 0;
+    box-shadow: rgba(34, 33, 33, 0.582) 0px 4px 4px 0px;
     }
     .boxes{
         grid-template-rows: none;
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
-    #brown-box, #green-box{ aspect-ratio: 1 / 1; }
-
-    /* CONTENT 1 */
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #brown-box, #green-box{ 
+        aspect-ratio: 1 / 1; 
     }
 
+    /* NAVIGATION BAR */
+    .navbar {
+        display: none;
+    }
+
+    /* PLANNED PLANTHOOD */
+    /* CONTENT */
+    .content {}
+
     /* CONTENT 2 */
+    /* VÅRA PLANERADE PLANTERINGAR: */
     .content2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .red-button {
+            display: inline-grid;
+            color: transparent;
+            background-color: transparent;
+            position: relative;
+            /* place-items: center; */
+            padding: 0;
+
+        }
+        .red-button::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: var(--röd);
+            -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+            mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+        }
     }
 
     /* CONTENT 3 */
