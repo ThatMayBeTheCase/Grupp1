@@ -279,7 +279,6 @@ h1 {
 
 .ändra-btn, .tabort-btn {
     min-width: 90px;
-    align-self: flex-end
 }
 /* ...existing code... */
 
@@ -346,10 +345,10 @@ h1 {
     }
 
     .navbar {
-        justify-content: center;
-        /* display: none; */
+        display: none;
+        /* justify-content: center;
         flex-wrap: wrap;
-        padding: 0rem;
+        padding: 0rem; */
     }
     .navbar a {
         font-size: 0.8rem;
@@ -373,14 +372,14 @@ h1 {
         display: none;
     }
     
-    .plant-list--single {
+    /* .plant-list--single {
         display: grid;
         padding: 1.9rem;
     }
     .plant-list--double {
         display: grid;
         padding: 0.7rem;
-    }
+    } */
     .plant-icon{
         display: none;
     }
@@ -396,8 +395,6 @@ h1 {
         place-items: center;
         margin: 0;
         padding: 0;
-        
-
     }
     .tabort-btn::before {
         content: "";
