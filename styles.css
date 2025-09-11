@@ -556,9 +556,6 @@ h3 {
     .info {
         grid-template-rows: none;
     }
-    .date {
-        /* margin-bottom: 0.1rem; */
-    }
     .farmer {
         margin: 0;
     }
