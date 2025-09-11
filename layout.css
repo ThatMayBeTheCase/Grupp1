@@ -33,8 +33,6 @@ body {
 /* Container */
 .container {
     background-color: white;
-    width: 90% ;
-    /* Storlek width: 90%; */
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -65,7 +63,7 @@ body {
 
 .navbar a:hover {
     color: var(--grön);
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
 
@@ -170,8 +168,8 @@ input[type="date"] {
     flex-direction: column;
     width: 175px;
     top: 50%;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+    box-shadow: 4px 4px 4px rgba(48, 47, 47, 0.253);
+    border-radius: 2px;
     overflow: hidden;
     background-color: #fff;
     position: relative;
@@ -209,6 +207,7 @@ input[type="date"] {
     grid-template-rows: auto auto;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    gap: 0.5rem;
 }
 .info > * {
     min-width: 0;
@@ -229,7 +228,7 @@ input[type="date"] {
     font-size: 14px;
     font-weight: 300;
     color: grey;
-    margin-top:50px;
+    margin-top:15px;
     margin-bottom: 0;
 } 
 .date {
@@ -312,6 +311,9 @@ input[type="date"] {
     .handbild img.heart {
         width: 250px;
         height: 300%;
+    }
+    .form-group-mobile {
+        display: none;
     }
     
     .plant-card {
