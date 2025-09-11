@@ -155,23 +155,30 @@ input[type="date"] {
 }
 /* PLANT LIST */
 .plant-list {
-    padding: 0.8rem;
+    display: grid;
+    align-items: start;
 }
-.plant-list1 {
+.plant-list--single {
+    grid-template-columns: minmax(150px, 200px);
     padding: 2rem;
 }
+.plant-list--double {
+    grid-template-columns: minmax(150px, 200px);
+    padding: 0.8rem;
+}
 
-.plant-list h2 {
+h1 {
     margin-bottom: 1.5rem;
     text-align: center;
     font-family: var(--maven);
+    font-size: 2rem;
 }
 
 .plant-card {
     display: flex;
     flex-direction: column;
-    width: 13rem;
-    height: 19rem;
+    width: 100%;
+    height: auto;
     box-shadow: 4px 4px 4px rgba(48, 47, 47, 0.253);
     border-radius: 2px;
     overflow: hidden;
@@ -186,30 +193,20 @@ input[type="date"] {
     top: 35%;
     transform: translateY(-50%);
     width: clamp(32px, 80%, 200px);
-  
-    /* content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: clamp(32px, 80%, 200px);
-    aspect-ratio: 1;
-
-    z-index: 2; */
 }
-
 .plant-img {
     display: block;
-    width: 13rem;
-    height: 14rem;
+    width: 100%;
+    aspect-ratio: 4/4;
     object-fit: cover;
-    align-self: flex-start;
+
 }
 .plant-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .info > * {
     min-width: 0;
@@ -237,7 +234,7 @@ input[type="date"] {
 }
 .date {
     font-family: var(--open);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
     text-align: right;
     margin-top: 0.3rem;
@@ -276,9 +273,9 @@ input[type="date"] {
     align-items: flex-end;
     justify-content: flex-end;
 }
-.tabort-btn2 {
-    margin: 0;
-}
+/* .tabort-btn2 {
+    
+} */
 
 .ändra-btn, .tabort-btn {
     min-width: 90px;
@@ -296,7 +293,7 @@ input[type="date"] {
     display: flex;
     justify-content: center;
     font-family: var(--maven);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 3%;
 }
 
@@ -376,16 +373,42 @@ input[type="date"] {
         display: none;
     }
     
-    .plant-card {
-        
-    }
-    .tvåkrukor{
+    .plant-list--single {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        padding: 1.9rem;
+    }
+    .plant-list--double {
+        display: grid;
+        padding: 0.7rem;
     }
     .plant-icon{
         display: none;
     }
+    .ändra-btn {
+        display: none;
+        }
+    .tabort-btn {
+        display: inline-grid;
+        color: transparent;
+        background-color: transparent;
+        position: relative;
+        border-radius: 50%;
+        place-items: center;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .tabort-btn::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: var(--röd);
+        -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+        mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+    }
+
+    /* BILDER ÖVER FOOTER */
     .bilder-rad {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -396,9 +419,14 @@ input[type="date"] {
         height: 100px;
         object-fit: cover;
     }
-    .plant-list{
-        
-        
+        h1 {
+        font-size: 1rem;
+        text-align: center;
     }
-
+    .rubrik {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    
 }
