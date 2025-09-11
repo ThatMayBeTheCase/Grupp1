@@ -30,31 +30,34 @@
         </header>
 
         <section class="form-section">
-  <h2>Lägg till ny plantering:</h2>
-  <form>
-      <div class="form-group">
-        <label for="planta1">Planta:</label>
-        <input type="text" id="planta1" name="planta1">
-      </div>
-      <div class="form-group">
-        <label for="datum1">Datum:</label>
-        <input type="text" id="datum1" name="datum1">
-      </div>
+            <h2>Lägg till ny plantering:</h2>
+            <form>
+                <div class="form-group">
+                    <label for="planta1">Planta:</label>
+                    <input type="text" id="planta1" name="planta1">
+                </div>
+                <div class="form-group">
+                    <label for="datum1">Datum:</label>
+                    <input type="text" id="datum1" name="datum1">
+                </div>
 
-      <div class="form-group form-group-mobile">
-        <label for="planta2">Planta:</label>
-        <input type="text" id="planta2" name="planta2">
-      </div>
-      <div class="form-group form-group-mobile">
-        <label for="datum2">Datum:</label>
-        <input type="text" id="datum2" name="datum2">
-      </div>
+                <div class="form-group form-group-mobile">
+                    <label for="planta2">Planta:</label>
+                    <input type="text" id="planta2" name="planta2">
+                </div>
+                <div class="form-group form-group-mobile">
+                    <label for="datum2">Datum:</label>
+                    <input type="text" id="datum2" name="datum2">
+                </div>
 
-      <button type="submit" class="btn">Lägg till</button>
-  </form>
-    </section>
+                <button type="submit" class="btn">Lägg till</button>
+            </form>
+        </section>
+
         <!-- PLANT LIST -->
-        <section class="plant-list">
+
+        
+        <section class="plant-list plant-list1">
             <h2>Dina planerade planteringar:</h2>
             <article= class= "plant-card">
                 <img src="./assets/images/gurka.avif" alt="Gurka" class="plant-img">
@@ -62,7 +65,7 @@
                 <div class="plant-info">
                     <p class="vegetable">Gurka</p> 
                     <p class="date">15 april 2024</p>
-                    <p class="farmer">Rico Coolio</p>
+                    <p class="farmer farmer1">Rico Coolio</p>
                     <div class="plant-actions">
                         <button class="ändra-btn">ÄNDRA</button>
                         <button class="tabort-btn">TA BORT</button>
@@ -70,7 +73,95 @@
                 </div>
             </article>
         </section>
+        <!-- ------------------------------------ -->
+            
+        <h1 id="toppen" class="rubrik">Dina planterade planteringar:</h1>
+        <section class="tvåkrukor">
+            <section class="plant-list">
+                <article= class= "plant-card card2">
+                    <img src="./assets/images/gurka.avif" alt="Gurka" class="plant-img">
+                    <img src="./assets/icons/plant.svg" alt="plant" class="plant-icon">
+                    <div class="plant-info">
+                        <p class="vegetable">Gurka</p> 
+                        <p class="date">15 april 2024</p>
+                        <p class="farmer">Rico Coolio</p>
+                        <div class="plant-actions">
+                            
+                            <button class="tabort-btn tabort-btn2">TA BORT</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
 
+            <section class="plant-list">
+                <article= class= "plant-card card2">
+                    <img src="./assets/images/gurka.avif" alt="Gurka" class="plant-img">
+                    <img src="./assets/icons/plant.svg" alt="plant" class="plant-icon">
+                    <div class="plant-info">
+                        <p class="vegetable">Gurka</p> 
+                        <p class="date">15 april 2024</p>
+                        <p class="farmer">Rico Coolio</p>
+                        <div class="plant-actions">
+                            
+                            <button class="tabort-btn tabort-btn2">TA BORT</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+       <!--  <section class="content">
+            <article class="container2">
+                <div class="bild-icon">
+                    <img src="./assets/images/gurka.avif" alt="gurka">
+                    <img class="plant" src="./assets/icons/plant.svg" alt="plant">
+
+                    <div class="bild-info">
+                        <div class="info-vänster">
+                            <p class="plant-namn">Gurka</p>
+                            <p class="fotograf">Rico Coolio</p>
+                        </div>
+
+                        <div class="info-höger">
+                            <p class="datum">15 april 2024</p>
+                            <button class="radera-button">TA BORT</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container2">
+                <div class="bild-icon">
+                    <img src="./assets/images/gurka.avif" alt="gurka">
+                    <img class="plant" src="./assets/icons/plant.svg" alt="plant">
+                    <div class="bild-info">
+                        <div class="info-vänster">
+                            <p class="plant-namn">Gurka</p>
+                            <p class="fotograf">Rico Coolio</p>
+                        </div>
+                        <div class="info-höger">
+                            <p class="datum">15 april 2024</p>
+                            <button class="radera-button">TA BORT</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section> -->
+
+        <!-- ****************Ram med fyra bilder***************** -->
+        <section class="brun-ram">
+            <div class="bilder-rad">
+                <img src="./assets/images/plockar.avif" alt="plockar">
+                <img src="./assets/images/vattenkanna.avif" alt="vattenkanna">
+                <img src="./assets/images/massagrönsaker.avif" alt="massagrönsaker">
+                <img src="./assets/images/tjejmedhatt.avif" alt="tjejmedhatt">
+            </div>
+        </section>
+
+        <section class="till-toppen">
+            <a href="#toppen">Till toppen av sidan</a>
+        </section>
+        <!-- ------------------------------------ -->
     </section>
 </body>
 </html>
