@@ -39,6 +39,7 @@ body {
     margin-bottom: 50px;
     box-shadow: 4px 4px 4px rgba(134, 132, 132, 0.25);
 }
+/* ----------------------------------------------------------------------------- */
 
 /* NAVBAR */
 .navbar {
@@ -67,6 +68,7 @@ body {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+/* ----------------------------------------------------------------------------- */
 
 /* Bild med hand */
 .handbild {
@@ -105,6 +107,7 @@ body {
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
     text-align: center;
 }
+/* ----------------------------------------------------------------------------- */
 
 /* FORM SECTION */
 .form-section {
@@ -135,7 +138,9 @@ input[type="date"] {
     box-shadow: 4px 4px 4px rgba(48, 47, 47, 0.082);
     border-radius: 5px;
 }
-/* knapp/ botton */
+/* ----------------------------------------------------------------------------- */
+
+/* knapp/ button */
 .btn {
     margin: 0 auto;
     background-color: var(--grön);
@@ -154,6 +159,8 @@ input[type="date"] {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+/* ----------------------------------------------------------------------------- */
+
 /* PLANT LIST */
 .plant-list {
     display: grid;
@@ -162,6 +169,17 @@ input[type="date"] {
 .plant-list--single {
     grid-template-columns: minmax(150px, 200px);
     padding: 2rem;
+}
+.rubrik{
+    display: flex;
+    justify-content: center;
+    font-family: var(--maven);
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+.tvåkrukor{
+    display: flex;
+    margin-left: 1.2rem;
 }
 .plant-list--double {
     grid-template-columns: minmax(150px, 200px);
@@ -232,7 +250,8 @@ h1 {
     margin-bottom: 0;
 }
 .farmer1 {
-    margin-top: 35px;
+  margin-top: 35px;
+    
 }
 .date {
     font-family: var(--open);
@@ -280,26 +299,11 @@ h1 {
 .ändra-btn, .tabort-btn {
     min-width: 90px;
 }
-/* ...existing code... */
 
 .delete-btn:hover {
     background-color: var(--knappröd);
 }
-
-
-
-.rubrik{
-    display: flex;
-    justify-content: center;
-    font-family: var(--maven);
-    font-size: 2rem;
-    margin-bottom: 3%;
-}
-
-.tvåkrukor{
-    display: flex;
-    margin-left: 1.2rem;
-}
+/* ----------------------------------------------------------------------------- */
 
 /* **********Ram med 4 bilder********** */
 
@@ -319,7 +323,10 @@ h1 {
     object-fit: cover;
     display: block;
 }
+/* ----------------------------------------------------------------------------- */
 
+
+/* TILL TOPPEN KNAPPEN */
 .till-toppen{
     background-color: white;
     text-align: center;
@@ -334,11 +341,10 @@ h1 {
     font-family: var(--lato);
     transition: color 0.3s ease;
 }
+/* ----------------------------------------------------------------------------- */
 
 
-
-
-/* Responsivitet */
+/* Responsivitet / optimisation för mobiler */
 @media (max-width: 768px) {
     form {
         flex-direction: column;
@@ -346,9 +352,6 @@ h1 {
 
     .navbar {
         display: none;
-        /* justify-content: center;
-        flex-wrap: wrap;
-        padding: 0rem; */
     }
     .navbar a {
         font-size: 0.8rem;
@@ -396,6 +399,8 @@ h1 {
         background-color: var(--röd);
         -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
         mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
+        display: flex;
+        justify-self: flex-end ;
     }
 
     /* BILDER ÖVER FOOTER */
@@ -417,6 +422,14 @@ h1 {
         font-size: 1rem;
         text-align: center;
     }
-    
-    
+    .handbild::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    aspect-ratio: 1;
+    background: url(./assets/icons/burgir.svg) no-repeat center/contain;
+    z-index: 2;
+    }
 }

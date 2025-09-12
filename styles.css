@@ -36,6 +36,7 @@ body {
     max-width: 1000px;
     box-shadow: 4px 4px 4px rgba(114, 114, 114, 0.25);
 }
+/* ----------------------------------------------------------------------------- */
 
 /* BILDER TOPPEN */
 .images {
@@ -86,7 +87,7 @@ body {
     width: clamp(48px, 35%, 200px);
     height: auto;
 }
-
+/* ----------------------------------------------------------------------------- */
 
 /* NAVIGATION BAR */
 .navbar {
@@ -106,6 +107,7 @@ body {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+/* ----------------------------------------------------------------------------- */
 
 /* PLANNED PLANTHOOD */
 h1 {
@@ -137,7 +139,8 @@ h1 {
 }
 .text { 
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
+    align-self: center
 }
 .text p {
     margin-top: 0;
@@ -180,6 +183,8 @@ h1 {
     height: clamp(180px, 35vw, 300px);
     border-radius: 50%;
 }
+/* ----------------------------------------------------------------------------- */
+
 /* VÅRA PLANERADE PLANTERINGAR: */
 h3 {
     display: flex;
@@ -311,6 +316,7 @@ h3 {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+/* ----------------------------------------------------------------------------- */
 
 /* VÅRA TIDIGARE ODLINGAR */
 .content3 {
@@ -368,7 +374,7 @@ h3 {
     width: clamp(100px, 35vw, 175px);
     height: clamp(100px, 35vw, 175px);
 }
-
+/* ----------------------------------------------------------------------------- */
 
 /* FOOTER */
 .footer {
@@ -470,11 +476,22 @@ h3 {
     color: var(--grön);
     transition: all 0.2s ease-in-out;
 }
+/* ----------------------------------------------------------------------------- */
 
 /* OPTIMIZATION FOR SMALLER DEVICES */
 @media (max-width: 768px) {
 
     /* HEADER IMAGES */
+   .hand-heart::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    aspect-ratio: 1;
+    background: url(./assets/icons/burgir.svg) no-repeat center/contain;
+    z-index: 2;
+}
     .images{
     grid-template-columns: 1fr;
     row-gap: 0;
@@ -487,11 +504,13 @@ h3 {
     #brown-box, #green-box{ 
         aspect-ratio: 1 / 1; 
     }
+    /* -------------------------------------- */
 
     /* NAVIGATION BAR */
     .navbar {
         display: none;
     }
+    /* -------------------------------------- */
 
     /* PLANNED PLANTHOOD */
     /* CONTENT */
@@ -543,6 +562,7 @@ h3 {
         margin: 1rem auto; 
         order: 3;
     }
+    /* -------------------------------------- */
 
     /* CONTENT 2 */
     /* VÅRA PLANERADE PLANTERINGAR: */
@@ -579,6 +599,7 @@ h3 {
         -webkit-mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
         mask: url("./assets/icons/TrashBin.svg") no-repeat center / contain;
     }
+    /* -------------------------------------- */
 
     /* CONTENT 3 */
    .content3 h4 {
@@ -619,6 +640,7 @@ h3 {
     width: clamp(50px, 35vw, 100px);
     height: clamp(50px, 35vw, 100px);
     }
+    /* -------------------------------------- */
 
     /* FOOTER */
     .footer-hero {
@@ -648,4 +670,5 @@ h3 {
     .return a {
     font-size: 1rem;
     }
+    /* -------------------------------------- */
 }
