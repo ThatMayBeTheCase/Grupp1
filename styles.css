@@ -5,6 +5,7 @@ html { scroll-behavior: smooth; }
   box-sizing: border-box;
 }
 
+/* VARIABLER */
 :root {
     /* FÄRGER */
     --brun: #9e6d52;
