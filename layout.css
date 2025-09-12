@@ -348,15 +348,7 @@ h1 {
     margin-bottom: 0;
     
 }
-/* .date {
-    font-family: var(--open);
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 0.3rem;
-    margin-bottom: 0;
-    
-}  */
+
 .ändra-btn {
    justify-self:end;
     align-self: end;
@@ -371,19 +363,7 @@ h1 {
     font-weight: 700;
     transform: translateX(1px);
 }
- /* .ändra-btn {
-   justify-self:end;
-    align-self: end;
-    background-color: var(--grön);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 2px 5px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    font-family: var(--open);
-    font-weight: 700;
-} */
+
 .tabort-btn {
     justify-self: end;
     align-self: end;
@@ -398,26 +378,6 @@ h1 {
     font-weight: 700;
     transform: translateX(1px);
 }
-/* .tabort-btn {
-    justify-self: end;
-    align-self: end;
-    background-color: var(--röd);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 2px 5px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    font-family: var(--open);
-    font-weight: 700;
-} */
-/* .plant-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-} */
-
 .delete-btn:hover {
     background-color: var(--knappröd);
 } 
