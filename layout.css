@@ -39,7 +39,6 @@ body {
     margin-bottom: 50px;
     box-shadow: 4px 4px 4px rgba(134, 132, 132, 0.25);
 }
-/* ----------------------------------------------------------------------------- */
 
 /* NAVBAR */
 .navbar {
@@ -68,7 +67,6 @@ body {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
-/* ----------------------------------------------------------------------------- */
 
 /* Bild med hand */
 .handbild {
@@ -162,7 +160,7 @@ input[type="date"] {
 /* ----------------------------------------------------------------------------- */
 
 /* PLANT LIST */
-.plant-list {
+ .plant-list {
     display: grid;
     align-items: start;
 }
@@ -177,6 +175,9 @@ input[type="date"] {
     font-size: 2rem;
     margin-bottom: 3%;
 }
+
+
+
 .tvåkrukor{
     display: flex;
     margin-left: 1.2rem;
@@ -193,6 +194,44 @@ h1 {
     font-size: 2rem;
 }
 /* Plant Card */
+ .plant-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 4px rgba(48, 47, 47, 0.253);
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    align-items: center;
+} 
+/* Bild i plant card */
+.plant-icon {
+    position: absolute;
+    width: auto;
+    height: 50%;
+    top: 35%;
+    transform: translateY(-50%);
+    width: clamp(32px, 80%, 200px);
+}
+.plant-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+
+} 
+ .plant-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}  
+
+/* ------------------------------------------------ */
+
 .plant-card {
     display: flex;
     flex-direction: column;
@@ -222,19 +261,51 @@ h1 {
 
 }
 .plant-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+    width: 100%;
+    padding: 0 10px;
+    
 }
-.info > * {
+
+.info-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.info-left2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+.info-right2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+
+.tvåkrukor{
+    display: flex;
+    justify-content: row;
+    margin-left: 1.2rem;
+}
+
+/* --------------------------------------------- */
+  .info > * {
     min-width: 0;
     word-break: break-word;
     justify-self: start;
     align-self: start;
 }
-
 .vegetable {
     font-family: var(--lato);
     font-size: 1rem;
@@ -248,12 +319,36 @@ h1 {
     color: grey;
     margin-top:15px; 
     margin-bottom: 0;
+    transform: translateY(-10px);
 }
+ .vegetable {
+    font-family: var(--lato);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+.farmer {
+    font-family: var(--lato);
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: grey;
+    margin-top:15px; 
+    margin-bottom: 0;
+} 
 .farmer1 {
   margin-top: 35px;
     
 }
 .date {
+    font-family: var(--open);
+    font-size: 0.82rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    
+}
+/* .date {
     font-family: var(--open);
     font-size: 0.7rem;
     font-weight: bold;
@@ -261,8 +356,22 @@ h1 {
     margin-top: 0.3rem;
     margin-bottom: 0;
     
-}
+}  */
 .ändra-btn {
+   justify-self:end;
+    align-self: end;
+    background-color: var(--grön);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 4px 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-family: var(--open);
+    font-weight: 700;
+    transform: translateX(1px);
+}
+ /* .ändra-btn {
    justify-self:end;
     align-self: end;
     background-color: var(--grön);
@@ -274,8 +383,22 @@ h1 {
     cursor: pointer;
     font-family: var(--open);
     font-weight: 700;
-}
+} */
 .tabort-btn {
+    justify-self: end;
+    align-self: end;
+    background-color: var(--röd);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 3px 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-family: var(--open);
+    font-weight: 700;
+    transform: translateX(1px);
+}
+/* .tabort-btn {
     justify-self: end;
     align-self: end;
     background-color: var(--röd);
@@ -287,22 +410,17 @@ h1 {
     cursor: pointer;
     font-family: var(--open);
     font-weight: 700;
-}
-.plant-actions {
+} */
+/* .plant-actions {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-}
-
-
-.ändra-btn, .tabort-btn {
-    min-width: 90px;
-}
+} */
 
 .delete-btn:hover {
     background-color: var(--knappröd);
-}
+} 
 /* ----------------------------------------------------------------------------- */
 
 /* **********Ram med 4 bilder********** */
@@ -438,4 +556,5 @@ h1 {
     background: url(./assets/icons/burgir.svg) no-repeat center/contain;
     z-index: 2;
     }
+    
 }
